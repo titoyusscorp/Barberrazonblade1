@@ -1,26 +1,26 @@
 {
-  "name": "base-app",
+  "name": "blade-razon-barber",
   "version": "1.0.0",
-  "description": "",
+  "description": "WhatsApp bot para Blade Razon Barber usando OpenAI y Twilio",
   "type": "module",
   "scripts": {
-    "dev": "npx tsx src/app.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
+  },
   "dependencies": {
-    "@bot-whatsapp/bot": "0.1.3-alpha.13",
-    "@bot-whatsapp/provider-baileys": "0.1.3-alpha.13",
-    "@builderbot-plugins/openai-agents": "^1.0.0",
-    "@builderbot-plugins/telegram": "0.2.13-alpha.0",
-    "date-fns": "^3.3.1",
     "dotenv": "^16.4.2",
-    "openai": "^4.27.0"
+    "express": "^4.18.2",
+    "openai": "^4.27.0",
+    "twilio": "^4.0.0",
+    "body-parser": "^1.20.2"
   },
   "devDependencies": {
-    "tsm": "^2.3.0",
-    "tsx": "^4.7.1"
+    "tsx": "^4.7.1",
+    "typescript": "^5.0.0"
   }
 }
